@@ -16,7 +16,7 @@ class ProdutosTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Editar", style: .plain, target: self, action: editButtonItem.action)
+        navigationItem.leftBarButtonItem = editButtonItem
         if let produtos = carregarProdutos(){
             self.produtos += produtos
         }else{
