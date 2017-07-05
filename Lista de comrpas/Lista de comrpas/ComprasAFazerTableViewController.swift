@@ -137,7 +137,7 @@ class ComprasAFazerTableViewController: UITableViewController {
                 comprasFromFile.append(compra)
                 self.compras = comprasFromFile
             }else{
-                self.compras.append(compra)
+                self.compras = [compra]
             }
             salvarCompras()
             self.compras = compras.filter{$0.itens[0].precoUnitario == 0.0}
@@ -149,8 +149,7 @@ class ComprasAFazerTableViewController: UITableViewController {
     @IBAction func voltarDeRealizacaoDeCompra(sender: UIStoryboardSegue){
         if let sourceViewController = sender.source as? ComprarViewController, let compra = sourceViewController.compra, compra === compras[(tableView.indexPathForSelectedRow?.row)!]{
             if let comprasFromFile = carregarCompras(){
-                //FIXIT: Filtro!
-                self.compras = comprasFromFile.filter{$0.nome != compra.nome || $0.itens[0].precoUnitario > 0.0}
+                self.compras = comprasFromFile.filter{$0.nome.uppercased() != compra.nome.uppercased()}
                 self.compras.append(compra)
             }else{
                 compras.remove(at: (tableView.indexPathForSelectedRow?.row)!)

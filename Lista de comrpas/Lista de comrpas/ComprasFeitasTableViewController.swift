@@ -70,10 +70,7 @@ class ComprasFeitasTableViewController: UITableViewController {
             if let compras = carregarCompras(){
                 self.compras = compras
             }
-            let novasCompras = self.compras.filter{
-                ($0.nome.uppercased() != compraSelecionada.nome.uppercased() && $0.itens[0].precoUnitario > 0.0) ||
-                ($0.nome.uppercased() != compraSelecionada.nome.uppercased() && $0.itens[0].precoUnitario == 0.0)
-            }
+            let novasCompras = self.compras.filter{$0.nome.uppercased() != compraSelecionada.nome.uppercased()}
             self.compras = novasCompras
             salvarCompras()
             self.compras =  novasCompras.filter{$0.itens[0].precoUnitario > 0.0}

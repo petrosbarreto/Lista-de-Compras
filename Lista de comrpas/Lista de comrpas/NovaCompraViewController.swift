@@ -125,7 +125,7 @@ class NovaCompraViewController: UIViewController, UITableViewDataSource, UITable
         if isNomeValido(){
             performSegue(withIdentifier: "CriarCompra", sender: self)
         }else{
-            let alerta = UIAlertController(title: "Nome inválido", message: "Já existe uma compra pendente com este nome.", preferredStyle: .alert)
+            let alerta = UIAlertController(title: "Nome inválido", message: "Já existe uma compra com este nome. Insira outro nome ou delete a compra já existente.", preferredStyle: .alert)
             let okAcao = UIAlertAction(title: "OK", style: .default)
             alerta.addAction(okAcao)
             self.present(alerta, animated: true)
@@ -183,7 +183,7 @@ class NovaCompraViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     private func isNomeValido() -> Bool{
-        for c in carregarCompras().filter({$0.itens[0].precoUnitario == 0}){
+        for c in carregarCompras(){
             if self.compra!.nome.uppercased() == c.nome.uppercased(){
                 return false
             }
