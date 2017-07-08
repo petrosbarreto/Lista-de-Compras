@@ -35,20 +35,6 @@ class NovoProdutoViewController: UIViewController, UITextFieldDelegate, UIImageP
         
         atualizarEstadoDoBotaoSalvar()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    // MARK: - Navegação
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let botao = sender as? UIBarButtonItem, botao === botaoSalvar else{
-//            fatalError("Botão salvar não pressionado.")
-//            return
-//        }
-//
-//    }
     
     //MARK: Médotos do UITextFieldDelegate
     func textFieldDidBeginEditing(_ textField: UITextField) {

@@ -29,11 +29,6 @@ class NovaCompraViewController: UIViewController, UITableViewDataSource, UITable
         }
         atualizarEstadoDoBotaoSalvar()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //MARK: Métodos de UITextFieldDelegate
     func textFieldDidBeginEditing(_ textField: UITextField) {
