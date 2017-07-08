@@ -137,9 +137,12 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descricaoLabel" destination="3kK-ah-R34" id="ta8-TY-ykA"/>
+                                    <outlet property="descricaoProdutoLabel" destination="tx9-QS-ujY" id="6Pt-69-Hkt"/>
                                     <outlet property="fotoImage" destination="ac9-v0-ySM" id="Gcf-5W-DIH"/>
                                     <outlet property="nomeLabel" destination="Pr5-Jy-0A9" id="DQW-70-aTU"/>
+                                    <outlet property="nomeProdutoLabel" destination="3aQ-vt-nHC" id="K6w-Zf-AWM"/>
                                     <outlet property="quantidadeLabel" destination="gnl-dA-2cB" id="8p3-WS-6N8"/>
+                                    <outlet property="quantidadeProdutoLabel" destination="TRT-28-HOW" id="HTG-d2-PAq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -154,7 +157,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vF-Sh-zqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="526"/>
+            <point key="canvasLocation" x="1721" y="526"/>
         </scene>
         <!--Comprar View Controller-->
         <scene sceneID="QY0-JL-xBT">
@@ -300,8 +303,12 @@
                                         <connections>
                                             <outlet property="fotoImage" destination="1y6-5f-r71" id="4sD-oE-753"/>
                                             <outlet property="nomeLabel" destination="AEm-Ye-J16" id="iwg-xE-zwv"/>
+                                            <outlet property="nomeProdutoLabel" destination="BCX-Dw-ewp" id="TYb-of-0bN"/>
+                                            <outlet property="precoItemLabel" destination="X0j-bQ-ac9" id="Ldj-tU-BjW"/>
                                             <outlet property="precoUnitarioLabel" destination="yf3-U4-Jg3" id="S6r-3F-osP"/>
                                             <outlet property="quantidadeLabel" destination="LtN-Eg-IGg" id="9Zh-Pm-HzU"/>
+                                            <outlet property="quantidadeProdutoLabel" destination="7AI-Pg-kGo" id="vCO-YL-xfP"/>
+                                            <outlet property="totalItemLabel" destination="nqx-TP-L1m" id="2un-aN-yXP"/>
                                             <outlet property="totalLabel" destination="4DN-N8-eVx" id="axw-6t-F64"/>
                                         </connections>
                                     </tableViewCell>
@@ -409,9 +416,12 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="descricaoLabel" destination="RhU-WC-mfc" id="pq3-cy-fAd"/>
+                                                    <outlet property="descricaoProdutoLabel" destination="xJo-cb-CDG" id="PAC-Ch-LKB"/>
                                                     <outlet property="fotoImage" destination="IIa-nq-rMm" id="gYm-4g-WG3"/>
                                                     <outlet property="nomeLabel" destination="Fet-9V-ERV" id="b9o-FD-8rd"/>
+                                                    <outlet property="nomeProdutoLabel" destination="ivE-kS-M8h" id="Nlj-Tp-B2x"/>
                                                     <outlet property="quantidadeLabel" destination="xoL-vA-Vor" id="gAX-ik-Ym4"/>
+                                                    <outlet property="quantidadeProdutoLabel" destination="X91-4l-ka9" id="fG7-ia-iAR"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -784,7 +794,7 @@
         <image name="defaultPhoto" width="1080" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mfr-h7-RaS"/>
         <segue reference="hV6-fD-oLZ"/>
+        <segue reference="7I3-c2-Amg"/>
     </inferredMetricsTieBreakers>
 </document>
